@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-yXojPyQW.css">
+</head>
+<style>
+    html {
+        background: url("/assets/bg2-5BNeXStt.jpg");
+        background-size: 100vh;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+    }
+</style>
+<body >
+  <div class="navbar backdrop-blur-sm bg-white/10 relative z-20">
+    <div class="navbar-start">
+        <div class="dropdown ">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-100 rounded-box w-52 z-30">
+                <li><a>Home</a></li>
+                <li>
+                    <a>Menu</a>
+                </li>
+                <li><a>About Us</a></li>
+            </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Sign Up</a>
+    </div>
+    <div class="navbar-center hidden lg:flex z-20">
+        <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+                <a>Menu</a>
+            </li>
+            <li><a>About Us</a></li>
+        </ul>
+    </div>
+    <div class="navbar-end">
+        <a class=" hidden btn bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold srounded-xl hover:bg-cyan-700 hover:to-purple-600 transition ease-in-out duration-150">Button</a>
+    </div>
+</div>
+
+    <!-- form -->
+    <div class="flex flex-col items-center justify-center h-screen ">
+        <div class="w-full max-w-md backdrop-blur-md bg-white/10 rounded-lg shadow-xl drop-shadow-2xl shadow-gray-950 p-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Sign Up</h2>
+    
+            <form class="flex flex-col" method="post">
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <input id="firstNameInput" placeholder="First Name"
+                            class="backdrop-blur-lg bg-white/10 text-white   placeholder:text-white border-0 rounded-md p-2 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150"
+                            type="text">
+                    </div>
+                    <div>
+                        <input id="lastNameInput" placeholder="Last Name"
+                            class="backdrop-blur-lg bg-white/10 text-white placeholder:text-white border-0 rounded-md p-2 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150"
+                            type="text">
+                    </div>
+                </div>
+    
+                <input id="emailInput" placeholder="Email"
+                    class="backdrop-blur-lg bg-white/10 text-white placeholder:text-white border-0 rounded-md p-2 mb-4 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150"
+                    type="email">
+    
+                <input id="phoneInput" placeholder="Phone Number"
+                    class="backdrop-blur-lg bg-white/10 text-white placeholder:text-white border-0 rounded-md p-2 mb-4 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150"
+                    type="tel">
+    
+                <input id="passwordInput" placeholder="Password"
+                    class="backdrop-blur-lg bg-white/10 text-white placeholder:text-white border-0 rounded-md p-2 mb-4 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150"
+                    type="password">
+    
+                <input id="confirmPasswordInput" placeholder="Confirm Password"
+                    class="backdrop-blur-lg bg-white/10 text-white placeholder:text-white border-0 rounded-md p-2 mb-4 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150"
+                    type="password">
+    
+                <div class="mb-4">
+                    <label for="dobInput" class="text-white">Date of Birth</label>
+                    <input id="dobInput"
+                        class="backdrop-blur-lg bg-white/10 text-white placeholder:text-white border-0 rounded-md p-2 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150"
+                        type="date">
+                </div>
+    
+                <div class="mb-4">
+                    <label for="genderInput" class="text-white">Gender</label>
+                    <select id="genderInput"
+                        class="backdrop-blur-lg bg-white/10 text-white placeholder:text-white border-0 rounded-md p-2 focus:backdrop-blur-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150">
+                        <option class=" text-white bg-gray-700" value="male">Male</option>
+                        <option class=" text-white bg-gray-700" value="female">Female</option>
+                        <option class=" text-white bg-gray-700" value="other">Other</option>
+                    </select>
+                </div>
+    
+                <button
+                    class="bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-cyan-700 hover:to-purple-600 transition ease-in-out duration-150"
+                    type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+  <script src="script.js"></script>
+</html>
